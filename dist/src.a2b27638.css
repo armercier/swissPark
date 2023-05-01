@@ -7,6 +7,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
+    z-index: -1;
   }
   #toolbar {
     position: absolute;
@@ -17,6 +18,39 @@ body {
     padding: 0.5rem;
   }
   
+  #map-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #search-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    background-color: rgb(11, 62, 144);
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    opacity: 0.6;
+  }
+
+  #data-button {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    z-index: 1;
+    background-color: rgb(11, 62, 144);
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    opacity: 0.6;
+  }
 .ol-box {
   box-sizing: border-box;
   border-radius: 2px;
